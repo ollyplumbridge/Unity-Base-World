@@ -1624,10 +1624,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2d504ad2d7ad174a831e120c9fa1f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTriggerDelay: 10
+  startTriggerDelay: 60
   skyFadeDuration: 2.4
   fogDelay: 2.3
-  fogFadeDuration: 4
+  fogFadeDuration: 36.8
   targetFogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   targetDensity: 0.5
 --- !u!4 &1071687563
