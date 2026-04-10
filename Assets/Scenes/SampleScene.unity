@@ -1624,7 +1624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2d504ad2d7ad174a831e120c9fa1f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTriggerDelay: 5
+  startTriggerDelay: 10
   skyFadeDuration: 2.4
   fogDelay: 2.3
   fogFadeDuration: 4
