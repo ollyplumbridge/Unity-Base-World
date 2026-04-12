@@ -1,43 +1,20 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class WildlifeWander : MonoBehaviour
+public class DebugNavMesh : MonoBehaviour
 {
-    public float wanderRadius = 15f;
-    public float waitTime = 3f;
-
-    private NavMeshAgent agent;
-    private float timer;
-
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
-        PickNewLocation();
-    }
+        NavMeshAgent agent = GetComponent<NavMeshAgent>();
 
-    void Update()
-    {
-        timer += Time.deltaTime;
-
-        if (!agent.pathPending && agent.remainingDistance < 0.5f)
+        if (agent.isOnNavMesh)
         {
-            if (timer >= waitTime)
-            {
-                PickNewLocation();
-                timer = 0;
-            }
+            Debug.Log("✅ Agent is ON NavMesh");
+            agent.SetDestination(new Vector3(5, 0, 5));
         }
-    }
-
-    void PickNewLocation()
-    {
-        Vector3 randomDir = Random.insideUnitSphere * wanderRadius;
-        randomDir += transform.position;
-
-        NavMeshHit hit;
-        if (NavMesh.SamplePosition(randomDir, out hit, wanderRadius, NavMesh.AllAreas))
+        else
         {
-            agent.SetDestination(hit.position);
+            Debug.Log("❌ Agent is NOT on NavMesh");
         }
     }
 }
