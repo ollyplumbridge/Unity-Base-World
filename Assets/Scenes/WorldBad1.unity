@@ -3389,7 +3389,7 @@ MonoBehaviour:
         z: 0.5895349
       Rotation:
         value:
-          x: -0.12736888
+          x: -0.1273689
           y: 0.94640017
           z: -0.10972153
           w: 0.27579904
@@ -4091,10 +4091,10 @@ MonoBehaviour:
         z: 0.8034912
       Rotation:
         value:
-          x: -0.049067926
-          y: 0.8643057
-          z: 0.16356707
-          w: -0.47308958
+          x: -0.04906795
+          y: 0.86430585
+          z: 0.163567
+          w: -0.47308952
     - Position:
         x: 148.80392
         y: 28.678574
@@ -6686,6 +6686,9 @@ MonoBehaviour:
   skyFadeDuration: 2.4
   fogDelay: 2.3
   fogFadeDuration: 36.8
+  normalSkyColor: {r: 0.3, g: 0.5, b: 0.8, a: 1}
+  normalFogColor: {r: 0.5, g: 0.6, b: 0.7, a: 1}
+  normalFogDensity: 0.01
   targetFogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   targetDensity: 0.5
 --- !u!4 &1962276046
@@ -6885,7 +6888,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a778b631c6253a04899cb31bad047c81, type: 3}
---- !u!1 &2095275117
+--- !u!1 &2088973445
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6893,9 +6896,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2095275120}
-  - component: {fileID: 2095275119}
-  - component: {fileID: 2095275118}
+  - component: {fileID: 2088973448}
+  - component: {fileID: 2088973447}
+  - component: {fileID: 2088973446}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -6903,13 +6906,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
---- !u!154 &2095275118
+--- !u!154 &2088973446
 TerrainCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2095275117}
+  m_GameObject: {fileID: 2088973445}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -6918,26 +6921,26 @@ TerrainCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_ProvidesContacts: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_TerrainData: {fileID: 15600000, guid: 21dc99a81130a0045bfd555f52dc1ea8, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: b463b5a51c275064ea3ab94db696b81c, type: 2}
   m_EnableTreeColliders: 1
---- !u!218 &2095275119
+--- !u!218 &2088973447
 Terrain:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2095275117}
+  m_GameObject: {fileID: 2088973445}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 21dc99a81130a0045bfd555f52dc1ea8, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: b463b5a51c275064ea3ab94db696b81c, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 1000
+  m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
@@ -6963,18 +6966,18 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
---- !u!4 &2095275120
+--- !u!4 &2088973448
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2095275117}
+  m_GameObject: {fileID: 2088973445}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6997,7 +7000,6 @@ SceneRoots:
   - {fileID: 1962276046}
   - {fileID: 616399004}
   - {fileID: 1656506786}
-  - {fileID: 2095275120}
   - {fileID: 488222766}
   - {fileID: 1091627761}
   - {fileID: 610737669}
@@ -7006,3 +7008,4 @@ SceneRoots:
   - {fileID: 1329147248}
   - {fileID: 876064573}
   - {fileID: 715425361}
+  - {fileID: 2088973448}
