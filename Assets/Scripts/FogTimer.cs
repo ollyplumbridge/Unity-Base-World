@@ -4,28 +4,36 @@ using System.Collections;
 public class FogTimer : MonoBehaviour
 {
     [Header("Timing")]
-    public float startTriggerDelay = 20f; // Time until anything happens
-    public float skyFadeDuration = 5f;    // How long the sky takes to turn gray
-    public float fogDelay = 1.5f;         // How many seconds to wait AFTER sky starts before fog appears
-    public float fogFadeDuration = 4f;    // How fast the actual fog thickens
+    public float startTriggerDelay = 20f; 
+    public float skyFadeDuration = 5f;    
+    public float fogDelay = 1.5f;         
+    public float fogFadeDuration = 4f;    
 
-    [Header("Fog & Background")]
-    public Color targetFogColor = new Color(0.5f, 0.5f, 0.5f); 
+    [Header("Normal World Settings (Before Event)")]
+    public Color normalSkyColor = new Color(0.3f, 0.5f, 0.8f);
+    public Color normalFogColor = new Color(0.5f, 0.6f, 0.7f);
+    public float normalFogDensity = 0.01f;
+
+    [Header("Heavy Event Settings")]
+    public Color targetFogColor = new Color(0.2f, 0.2f, 0.2f); // Darker gray
     public float targetDensity = 0.05f;
 
     private Camera mainCam;
     private CameraClearFlags originalFlags;
-    private Color originalCamColor;
 
     void Start()
     {
         mainCam = Camera.main;
         originalFlags = mainCam.clearFlags;
-        originalCamColor = mainCam.backgroundColor;
 
-        RenderSettings.fog = false;
-        RenderSettings.fogDensity = 0;
-        RenderSettings.fogColor = targetFogColor;
+        // Apply "Normal" settings immediately on Start
+        mainCam.clearFlags = CameraClearFlags.SolidColor;
+        mainCam.backgroundColor = normalSkyColor;
+        
+        RenderSettings.fog = true; // Fog is now ON from the start
+        RenderSettings.fogMode = FogMode.ExponentialSquared; // Good for "thick" feel
+        RenderSettings.fogColor = normalFogColor;
+        RenderSettings.fogDensity = normalFogDensity;
 
         StartCoroutine(StartTheFogEvent());
     }
@@ -34,46 +42,46 @@ public class FogTimer : MonoBehaviour
     {
         yield return new WaitForSeconds(startTriggerDelay);
         
-        // Switch to Solid Color immediately
-        mainCam.clearFlags = CameraClearFlags.SolidColor;
-        Color startingBlue = new Color(0.3f, 0.5f, 0.8f); 
-
         float elapsed = 0;
-        bool fogStarted = false;
+        bool transitionStarted = false;
 
-        // Run the master loop based on the sky duration
-        while (elapsed < skyFadeDuration)
+        // Use the longest duration to ensure the loop runs long enough
+        float totalDuration = Mathf.Max(skyFadeDuration, fogDelay + fogFadeDuration);
+
+        while (elapsed < totalDuration)
         {
             elapsed += Time.deltaTime;
-            float skyT = elapsed / skyFadeDuration;
 
-            // 1. Fade the Sky Background First
-            mainCam.backgroundColor = Color.Lerp(startingBlue, targetFogColor, skyT);
+            // 1. Fade the Sky Background
+            float skyT = Mathf.Clamp01(elapsed / skyFadeDuration);
+            mainCam.backgroundColor = Color.Lerp(normalSkyColor, targetFogColor, skyT);
 
-            // 2. Start the Fog after the specified 'fogDelay'
+            // 2. Start the Heavy Fog transition after 'fogDelay'
             if (elapsed >= fogDelay)
             {
-                if (!fogStarted) { RenderSettings.fog = true; fogStarted = true; }
-                
                 float fogElapsed = elapsed - fogDelay;
-                float fogT = fogElapsed / fogFadeDuration;
-                RenderSettings.fogDensity = Mathf.Lerp(0, targetDensity, fogT);
+                float fogT = Mathf.Clamp01(fogElapsed / fogFadeDuration);
+                
+                // Fade both Density and Color for a smoother "creeping in" effect
+                RenderSettings.fogDensity = Mathf.Lerp(normalFogDensity, targetDensity, fogT);
+                RenderSettings.fogColor = Color.Lerp(normalFogColor, targetFogColor, fogT);
             }
 
             yield return null;
         }
 
-        // Ensure final values are set
+        // Ensure final values are locked in
         RenderSettings.fogDensity = targetDensity;
+        RenderSettings.fogColor = targetFogColor;
         mainCam.backgroundColor = targetFogColor;
     }
 
     void OnDisable()
     {
+        // Resets to Unity defaults if script is turned off
         if (mainCam != null)
         {
             mainCam.clearFlags = originalFlags;
-            mainCam.backgroundColor = originalCamColor;
         }
     }
 }
