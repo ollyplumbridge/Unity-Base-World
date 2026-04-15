@@ -10023,7 +10023,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -10032,7 +10032,7 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.414
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -10066,7 +10066,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 3103
+  m_ColorTemperature: 6262
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -17538,7 +17538,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -36865,10 +36865,10 @@ MonoBehaviour:
         z: 0.5895349
       Rotation:
         value:
-          x: -0.12736888
-          y: 0.94640017
-          z: -0.10972153
-          w: 0.27579904
+          x: -0.12736887
+          y: 0.9464001
+          z: -0.10972156
+          w: 0.2757991
     - Position:
         x: 171.61935
         y: 13.747208
@@ -38089,10 +38089,10 @@ MonoBehaviour:
         z: 0.7048142
       Rotation:
         value:
-          x: -0.039752357
-          y: 0.8944611
-          z: 0.1712968
-          w: -0.41111624
+          x: -0.039752353
+          y: 0.894461
+          z: 0.17129683
+          w: -0.41111627
     - Position:
         x: 60.37021
         y: 46.786316
