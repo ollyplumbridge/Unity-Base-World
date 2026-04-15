@@ -1158,6 +1158,53 @@ CapsuleCollider:
   m_Height: 1.9458141
   m_Direction: 1
   m_Center: {x: -0.1, y: 0.035846833, z: 0.08352537}
+--- !u!1 &453711677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 453711679}
+  - component: {fileID: 453711678}
+  m_Layer: 0
+  m_Name: SceneTimer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &453711678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453711677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 827d84bcbe23127418d71e3d12f1a9f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: End-good-bad-3
+  delay: 105
+  loadAutomatically: 1
+--- !u!4 &453711679
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453711677}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 541.86395, y: -0.08446779, z: 281.31326}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &457362769
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2106,9 +2153,9 @@ MonoBehaviour:
         z: 0.27104816
       Rotation:
         value:
-          x: 0.0030425028
+          x: 0.0030425033
           y: -0.2869153
-          z: 0.027702115
+          z: 0.027702114
           w: 0.95755047
     - Position:
         x: 48.160004
@@ -2592,9 +2639,9 @@ MonoBehaviour:
         z: 0.8780248
       Rotation:
         value:
-          x: -0.024131058
-          y: 0.84503865
-          z: 0.015610009
+          x: -0.02413106
+          y: 0.8450388
+          z: 0.015610007
           w: 0.53393215
     - Position:
         x: 140.15158
@@ -2773,9 +2820,9 @@ MonoBehaviour:
       Rotation:
         value:
           x: 0.13459827
-          y: 0.91847223
-          z: 0.06408956
-          w: 0.36631233
+          y: 0.9184722
+          z: 0.064089544
+          w: 0.36631224
     - Position:
         x: 156.7579
         y: 10.67128
@@ -2826,9 +2873,9 @@ MonoBehaviour:
         z: 0.70366275
       Rotation:
         value:
-          x: -0.018020669
+          x: -0.018020663
           y: 0.93168616
-          z: 0.21117023
+          z: 0.2111702
           w: 0.29503098
     - Position:
         x: 162.40964
@@ -2970,9 +3017,9 @@ MonoBehaviour:
         z: 0.39935517
       Rotation:
         value:
-          x: -0.068520784
-          y: 0.926706
-          z: -0.21526872
+          x: -0.06852078
+          y: 0.92670596
+          z: -0.21526875
           w: 0.30030045
     - Position:
         x: 169.84012
@@ -3006,10 +3053,10 @@ MonoBehaviour:
         z: 0.5895349
       Rotation:
         value:
-          x: -0.1273689
-          y: 0.94640017
-          z: -0.10972153
-          w: 0.27579904
+          x: -0.12736887
+          y: 0.9464001
+          z: -0.10972156
+          w: 0.2757991
     - Position:
         x: 171.61935
         y: 13.747208
@@ -3096,10 +3143,10 @@ MonoBehaviour:
         z: 0.34886396
       Rotation:
         value:
-          x: -0.009273297
+          x: -0.009273303
           y: 0.9535194
-          z: 0.1601823
-          w: 0.2550617
+          z: 0.16018231
+          w: 0.25506172
     - Position:
         x: 176.15482
         y: 16.14479
@@ -3115,9 +3162,9 @@ MonoBehaviour:
       Rotation:
         value:
           x: -0.034627356
-          y: 0.94198304
+          y: 0.9419829
           z: 0.064468674
-          w: 0.32758635
+          w: 0.3275863
     - Position:
         x: 178.31784
         y: 16.486252
@@ -3186,9 +3233,9 @@ MonoBehaviour:
         z: 0.50083935
       Rotation:
         value:
-          x: 0.0035141045
+          x: 0.0035141048
           y: 0.9523766
-          z: 0.013477048
+          z: 0.013477047
           w: 0.30460617
     - Position:
         x: 182.923
@@ -3348,10 +3395,10 @@ MonoBehaviour:
         z: 1.0373757
       Rotation:
         value:
-          x: -0.054493718
+          x: -0.054493725
           y: 0.9972881
-          z: 0.049344853
-          w: 0.0034558715
+          z: 0.049344845
+          w: 0.0034558708
     - Position:
         x: 184.59769
         y: 22.628586
@@ -3420,7 +3467,7 @@ MonoBehaviour:
         z: 1.1011018
       Rotation:
         value:
-          x: -0.06354214
+          x: -0.063542135
           y: 0.9655081
           z: 0.14031227
           w: -0.20992583
@@ -3510,10 +3557,10 @@ MonoBehaviour:
         z: 1.2463686
       Rotation:
         value:
-          x: -0.06445245
-          y: 0.96749824
-          z: 0.100392126
-          w: -0.22296716
+          x: -0.064452454
+          y: 0.96749836
+          z: 0.10039211
+          w: -0.22296715
     - Position:
         x: 173.22
         y: 26.590012
@@ -3528,10 +3575,10 @@ MonoBehaviour:
         z: 0.7522595
       Rotation:
         value:
-          x: -0.05210086
+          x: -0.052100856
           y: 0.95115113
-          z: 0.12631916
-          w: -0.27684018
+          z: 0.12631914
+          w: -0.27684015
     - Position:
         x: 174.51999
         y: 27.12001
@@ -3636,10 +3683,10 @@ MonoBehaviour:
         z: 1.1259055
       Rotation:
         value:
-          x: -0.07179444
-          y: 0.8792252
-          z: 0.02366812
-          w: -0.47037053
+          x: -0.07179442
+          y: 0.879225
+          z: 0.023668125
+          w: -0.47037062
     - Position:
         x: 162.65
         y: 27.240005
@@ -3654,9 +3701,9 @@ MonoBehaviour:
         z: 0.9176326
       Rotation:
         value:
-          x: -0.071461864
+          x: -0.07146187
           y: 0.8403243
-          z: 0.020424183
+          z: 0.020424187
           w: -0.5369647
     - Position:
         x: 158.75003
@@ -3672,10 +3719,10 @@ MonoBehaviour:
         z: 0.7218188
       Rotation:
         value:
-          x: 0.016010968
-          y: 0.975653
-          z: 0.08534774
-          w: -0.20139682
+          x: 0.016010972
+          y: 0.97565305
+          z: 0.08534775
+          w: -0.2013968
     - Position:
         x: 159.92001
         y: 27.5
@@ -3745,9 +3792,9 @@ MonoBehaviour:
       Rotation:
         value:
           x: -0.075307295
-          y: 0.8578012
-          z: 0.24751441
-          w: -0.44411996
+          y: 0.85780126
+          z: 0.24751438
+          w: -0.44411987
     - Position:
         x: 149.04001
         y: 30.65001
@@ -3762,10 +3809,10 @@ MonoBehaviour:
         z: 0.82693684
       Rotation:
         value:
-          x: -0.14090623
+          x: -0.14090624
           y: 0.80299366
-          z: 0.17813376
-          w: -0.55101264
+          z: 0.17813377
+          w: -0.5510127
     - Position:
         x: 144.03
         y: 29.87001
@@ -3906,7 +3953,7 @@ MonoBehaviour:
         z: 1.0101786
       Rotation:
         value:
-          x: 0.05884388
+          x: 0.05884389
           y: -0.62846726
           z: -0.26106957
           w: 0.7303485
@@ -4033,9 +4080,9 @@ MonoBehaviour:
       Rotation:
         value:
           x: -0.07334213
-          y: 0.9032409
-          z: 0.08951412
-          w: -0.4132362
+          y: 0.9032408
+          z: 0.08951411
+          w: -0.41323614
     - Position:
         x: 94.110016
         y: 47
@@ -4086,10 +4133,10 @@ MonoBehaviour:
         z: 1.1514547
       Rotation:
         value:
-          x: -0.13125968
-          y: 0.9536825
-          z: -0.07657267
-          w: -0.25960967
+          x: -0.1312597
+          y: 0.95368254
+          z: -0.07657265
+          w: -0.2596096
     - Position:
         x: 85.889984
         y: 44.72
@@ -4212,10 +4259,10 @@ MonoBehaviour:
         z: 1.155834
       Rotation:
         value:
-          x: -0.080790386
-          y: 0.9465873
-          z: 0.08530557
-          w: -0.30028054
+          x: -0.08079038
+          y: 0.94658726
+          z: 0.085305564
+          w: -0.3002805
     - Position:
         x: 65.899994
         y: 44.300003
@@ -4410,9 +4457,9 @@ MonoBehaviour:
         z: 1.0774544
       Rotation:
         value:
-          x: -0.11238354
+          x: -0.112383544
           y: 0.6051628
-          z: -0.08575687
+          z: -0.08575688
           w: 0.7834498
     - Position:
         x: 43.54001
@@ -7855,7 +7902,7 @@ MonoBehaviour:
   normalSkyColor: {r: 0.12028304, g: 0.13657136, b: 0.16037738, a: 1}
   normalFogColor: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
   normalFogDensity: 0.03
-  targetFogColor: {r: 0.25490198, g: 0.22745098, b: 0.22745098, a: 1}
+  targetFogColor: {r: 0.9811321, g: 0.9718761, b: 0.9718761, a: 1}
   targetDensity: 10000
 --- !u!4 &1821837307
 Transform:
@@ -8635,3 +8682,4 @@ SceneRoots:
   - {fileID: 1179972493}
   - {fileID: 1459583466}
   - {fileID: 793354329}
+  - {fileID: 453711679}

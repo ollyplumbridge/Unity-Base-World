@@ -3073,10 +3073,10 @@ MonoBehaviour:
         z: 0.5895349
       Rotation:
         value:
-          x: -0.1273689
-          y: 0.94640017
-          z: -0.10972153
-          w: 0.27579904
+          x: -0.12736887
+          y: 0.9464001
+          z: -0.10972156
+          w: 0.2757991
     - Position:
         x: 171.61935
         y: 13.747208
@@ -4297,10 +4297,10 @@ MonoBehaviour:
         z: 0.7048142
       Rotation:
         value:
-          x: -0.03975238
-          y: 0.8944611
-          z: 0.17129682
-          w: -0.41111624
+          x: -0.039752353
+          y: 0.894461
+          z: 0.17129683
+          w: -0.41111627
     - Position:
         x: 60.37021
         y: 46.786316
@@ -5890,6 +5890,56 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9069115365609054727, guid: 60f79905accf3b24fa0114b941f1aac0, type: 3}
   m_PrefabInstance: {fileID: 1561774228}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &495873133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 495873135}
+  - component: {fileID: 495873134}
+  m_Layer: 0
+  m_Name: Fogmanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &495873134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495873133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b38039931def749b81c82a4f3e2c32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTriggerDelay: 128
+  skyFadeDuration: 4
+  fogDelay: 2.5
+  fogFadeDuration: 4
+  targetFogColor: {r: 1, g: 1, b: 1, a: 1}
+  targetDensity: 1
+--- !u!4 &495873135
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495873133}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 591.35516, y: 159.12186, z: 672.4914}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &501383138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6873,8 +6923,6 @@ Transform:
   m_Children:
   - {fileID: 410087041}
   - {fileID: 832575519}
-  - {fileID: 1458274554}
-  - {fileID: 1071687563}
   - {fileID: 636133143}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8001,6 +8049,53 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22a3fd8d3e59a1149bdcd775c0e87241, type: 3}
+--- !u!1 &936423021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 936423023}
+  - component: {fileID: 936423022}
+  m_Layer: 0
+  m_Name: SceneTimer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &936423022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936423021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 827d84bcbe23127418d71e3d12f1a9f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: End-good-bad-1
+  delay: 134
+  loadAutomatically: 1
+--- !u!4 &936423023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936423021}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 541.86395, y: -0.08446779, z: 281.31326}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &951667961
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8084,59 +8179,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7405846476849542632, guid: c6308cb7062fac34e8e50600086b12a1, type: 3}
   m_PrefabInstance: {fileID: 1772727475}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1071687561
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1071687563}
-  - component: {fileID: 1071687562}
-  m_Layer: 0
-  m_Name: Fogmanager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1071687562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1071687561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2d504ad2d7ad174a831e120c9fa1f36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startTriggerDelay: 10
-  skyFadeDuration: 2.4
-  fogDelay: 2.3
-  fogFadeDuration: 4
-  normalSkyColor: {r: 0.3, g: 0.5, b: 0.8, a: 1}
-  normalFogColor: {r: 0.5, g: 0.6, b: 0.7, a: 1}
-  normalFogDensity: 0.01
-  targetFogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  targetDensity: 0
---- !u!4 &1071687563
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1071687561}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 98.7294, y: -8.785965, z: 38.643677}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 714660362}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1082602877 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9069115365609054727, guid: 60f79905accf3b24fa0114b941f1aac0, type: 3}
@@ -10005,75 +10047,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9069115365609054727, guid: 60f79905accf3b24fa0114b941f1aac0, type: 3}
   m_PrefabInstance: {fileID: 1097631841}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1458274552
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1458274554}
-  - component: {fileID: 1458274553}
-  - component: {fileID: 1458274555}
-  m_Layer: 0
-  m_Name: FogZone
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &1458274553
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458274552}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 113, y: 22.3, z: 210.9}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &1458274554
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458274552}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.4304323, z: -0, w: 0.9026229}
-  m_LocalPosition: {x: 60.027924, y: 37.105515, z: -205.24323}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 714660362}
-  m_LocalEulerAnglesHint: {x: 0, y: -50.99, z: 0}
---- !u!114 &1458274555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1458274552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afd75bde4ddbf3b49a6a3aa9dca22ed9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fogParticles: {fileID: 0}
-  targetRate: 50
-  transitionSpeed: 2
 --- !u!4 &1463292657 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8736915626380737205, guid: fc36ff9abb0e635499730e9da44b4a95, type: 3}
@@ -14415,3 +14388,5 @@ SceneRoots:
   - {fileID: 354468537}
   - {fileID: 642511891}
   - {fileID: 1499385264}
+  - {fileID: 936423023}
+  - {fileID: 495873135}
