@@ -5,52 +5,52 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu-scenes/start-scene-audio.unity
     guid: 0842f32953b1ee1458e7e502ed797f96
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BaseWorld.unity
     guid: 309f17b496d7a654989b43fda128af31
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/WorldBad1.unity
     guid: e4bc88b638c8d9a458d2fdb607d4366c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/WorldBad2.unity
     guid: b17d6e0d915011547ba37ad69eee2ba1
   - enabled: 1
     path: Assets/Scenes/WorldBad3.unity
     guid: 3f3c8c604bc3a104ba741a8df10be76b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/WorldGood1.unity
     guid: e140d0f1aafbdf34fafaf2be0ff0960e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/WorldGood2.unity
     guid: 999cd4c1b02e3af47beb5cbc947fed55
   - enabled: 1
     path: Assets/Scenes/WorldGood3.unity
     guid: 9e686b9b08c5bf34c8606b7213fc9a39
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu-scenes/Choose-object-menu.unity
     guid: c804d557beab9b4498c26bfcb80b6c62
   - enabled: 1
     path: Assets/Scenes/Menu-scenes/End-good-bad-3.unity
     guid: 4eebdda2b6a87f24eb273c5fd2ea7864
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu-scenes/Place-object-1.unity
     guid: e95ac42b5a292e5408f332014489847f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu-scenes/Start-menu-scene-base-memory.unity
     guid: 72bb643c6ec3f20479925c97f41ed8cb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu-scenes/end-good-bad-1.unity
     guid: bc7e7c61211b07849a20095a224aec37
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu-scenes/end-good-bad-2.unity
     guid: 8ed6321a9b6af8444a6f12321fa09fe9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu-scenes/Place-object-2.unity
     guid: 97f38f5ffc9f55a419daa237acece1b3
   - enabled: 1
