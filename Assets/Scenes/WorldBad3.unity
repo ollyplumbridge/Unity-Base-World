@@ -122,99 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &10247879
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 10247882}
-  - component: {fileID: 10247881}
-  - component: {fileID: 10247880}
-  m_Layer: 0
-  m_Name: Terrain
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!154 &10247880
-TerrainCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 10247879}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_TerrainData: {fileID: 15600000, guid: 21dc99a81130a0045bfd555f52dc1ea8, type: 2}
-  m_EnableTreeColliders: 1
---- !u!218 &10247881
-Terrain:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 10247879}
-  m_Enabled: 1
-  serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: 21dc99a81130a0045bfd555f52dc1ea8, type: 2}
-  m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
-  m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 1000
-  m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 5
-  m_SplatMapDistance: 1000
-  m_HeightmapMinimumLODSimplification: 0
-  m_HeightmapMaximumLOD: 0
-  m_ShadowCastingMode: 2
-  m_DrawHeightmap: 1
-  m_DrawInstanced: 0
-  m_DrawTreesAndFoliage: 1
-  m_StaticShadowCaster: 0
-  m_IgnoreQualitySettings: 0
-  m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
-  m_BakeLightProbesForTrees: 1
-  m_PreserveTreePrototypeLayers: 0
-  m_DeringLightProbesForTrees: 1
-  m_ReceiveGI: 1
-  m_ScaleInLightmap: 0.0256
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
-  m_GroupingID: 0
-  m_RenderingLayerMask: 1
-  m_AllowAutoConnect: 1
-  m_EnableHeightmapRayTracing: 1
-  m_EnableTreesAndDetailsRayTracing: 0
-  m_TreeMotionVectorModeOverride: 3
---- !u!4 &10247882
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 10247879}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &17061271
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,13 +224,15 @@ PlayableDirector:
   m_GameObject: {fileID: 17061271}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: e8ad743a9468d1e4a912ad694ef9731b, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: db70b7f305477ff4096b683f58feb24c, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: -941408542402252336, guid: e8ad743a9468d1e4a912ad694ef9731b, type: 2}
+    value: {fileID: 17061274}
+  - key: {fileID: -941408542402252336, guid: db70b7f305477ff4096b683f58feb24c, type: 2}
     value: {fileID: 17061274}
   m_ExposedReferences:
     m_References: []
@@ -412,8 +321,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17061271}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.02222767, y: 0.63695824, z: -0.018378582, w: 0.77035856}
-  m_LocalPosition: {x: 482.56055, y: 162.94699, z: 628.8267}
+  m_LocalRotation: {x: 0.022222042, y: 0.635679, z: -0.018311886, w: 0.77141625}
+  m_LocalPosition: {x: 482.56036, y: 162.94699, z: 628.8267}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1524,17 +1433,17 @@ MonoBehaviour:
       TangentIn:
         x: 0
         y: 0
-        z: -0.6598762
+        z: -0.66096115
       TangentOut:
         x: 0
         y: 0
-        z: 0.6598762
+        z: 0.66096115
       Rotation:
         value:
-          x: 0.023534581
-          y: 0.6369113
-          z: -0.016797861
-          w: 0.7703947
+          x: 0.023465581
+          y: 0.6356344
+          z: -0.016802743
+          w: 0.77145046
     - Position:
         x: 3.3600159
         y: 0
@@ -1542,17 +1451,17 @@ MonoBehaviour:
       TangentIn:
         x: 0
         y: 0
-        z: -1.1398823
+        z: -1.1313077
       TangentOut:
         x: 0
         y: 0
-        z: 1.1398823
+        z: 1.1313077
       Rotation:
         value:
-          x: -0.058431946
-          y: 0.3670904
-          z: 0.034186136
-          w: 0.9277185
+          x: -0.05893744
+          y: 0.36894163
+          z: 0.03424147
+          w: 0.9269498
     - Position:
         x: 4.787903
         y: 0.7130432
@@ -1560,17 +1469,17 @@ MonoBehaviour:
       TangentIn:
         x: 0
         y: 0
-        z: -0.54966015
+        z: -0.5762139
       TangentOut:
         x: 0
         y: 0
-        z: 0.54966015
+        z: 0.5762139
       Rotation:
         value:
-          x: -0.18050931
-          y: 0.41657928
-          z: 0.0077960454
-          w: 0.89096427
+          x: -0.17112751
+          y: 0.40219882
+          z: 0.0064478135
+          w: 0.8993942
     - Position:
         x: 6.0700073
         y: 0.8400116
@@ -1578,34 +1487,34 @@ MonoBehaviour:
       TangentIn:
         x: 0
         y: 0
-        z: -1.0699934
+        z: -0.94301623
       TangentOut:
         x: 0
         y: 0
-        z: 1.0699934
+        z: 0.94301623
       Rotation:
         value:
-          x: 0.018557189
-          y: 0.14724211
-          z: 0.017778073
-          w: 0.9887667
+          x: 0.020674003
+          y: 0.14894253
+          z: 0.017511267
+          w: 0.98847467
     - Position:
-        x: 6.7764893
-        y: 0.7498474
-        z: 9.4869995
+        x: 6.649994
+        y: 0.75
+        z: 9.030029
       TangentIn:
         x: 0
         y: 0
-        z: -1.2476233
+        z: -1.247637
       TangentOut:
         x: 0
         y: 0
-        z: 1.2476233
+        z: 1.247637
       Rotation:
         value:
-          x: 0.0064142295
-          y: 0.13460356
-          z: 0.020680327
+          x: 0.006414186
+          y: 0.13460325
+          z: 0.020680342
           w: 0.990663
     - Position:
         x: 8.311523
@@ -1614,17 +1523,17 @@ MonoBehaviour:
       TangentIn:
         x: 0
         y: 0
-        z: -0.5973192
+        z: -0.6424463
       TangentOut:
         x: 0
         y: 0
-        z: 0.5973192
+        z: 0.6424463
       Rotation:
         value:
-          x: -0.022697309
-          y: 0.7083418
-          z: 0.00034534867
-          w: 0.70550454
+          x: -0.019642934
+          y: 0.637515
+          z: -0.00007037029
+          w: 0.7701875
     - Position:
         x: 10.160004
         y: 0.83000183
@@ -1632,17 +1541,17 @@ MonoBehaviour:
       TangentIn:
         x: 0
         y: 0
-        z: -0.67138124
+        z: -0.6685789
       TangentOut:
         x: 0
         y: 0
-        z: 0.67138124
+        z: 0.6685789
       Rotation:
         value:
-          x: -0.016800288
-          y: 0.7619136
-          z: -0.0031569086
-          w: 0.647453
+          x: -0.017226562
+          y: 0.77805686
+          z: -0.0029582144
+          w: 0.6279507
     - Position:
         x: 12.450012
         y: 0.8700104
@@ -1650,17 +1559,17 @@ MonoBehaviour:
       TangentIn:
         x: 0
         y: 0
-        z: -0.8928
+        z: -0.8948527
       TangentOut:
         x: 0
         y: 0
-        z: 0.8928
+        z: 0.8948527
       Rotation:
         value:
-          x: -0.015789418
-          y: 0.72367626
-          z: -0.0034811865
-          w: 0.68995017
+          x: -0.01569706
+          y: 0.7202384
+          z: -0.0035166005
+          w: 0.69354004
     - Position:
         x: 14.970001
         y: 0.9200134
@@ -1668,17 +1577,17 @@ MonoBehaviour:
       TangentIn:
         x: 0
         y: 0
-        z: -0.5853909
+        z: -0.58446896
       TangentOut:
         x: 0
         y: 0
-        z: 0.5853909
+        z: 0.58446896
       Rotation:
         value:
-          x: -0.013866598
-          y: 0.66361547
-          z: 0.008596027
-          w: 0.74789596
+          x: -0.013910776
+          y: 0.6650606
+          z: 0.008593752
+          w: 0.7466104
     - Position:
         x: 16
         y: 0.980011
@@ -1686,17 +1595,17 @@ MonoBehaviour:
       TangentIn:
         x: 0
         y: 0
-        z: -0.37380424
+        z: -0.37368232
       TangentOut:
         x: 0
         y: 0
-        z: 0.37380424
+        z: 0.37368232
       Rotation:
         value:
-          x: -0.023882298
-          y: 0.84900117
-          z: 0.01629701
-          w: 0.52759933
+          x: -0.023862088
+          y: 0.84854674
+          z: 0.016307617
+          w: 0.52833045
     - Position:
         x: 17.710022
         y: 1.0299988
@@ -1704,17 +1613,17 @@ MonoBehaviour:
       TangentIn:
         x: 0
         y: 0
-        z: -0.9055515
+        z: -0.9054387
       TangentOut:
         x: 0
         y: 0
-        z: 0.9055515
+        z: 0.9054387
       Rotation:
         value:
-          x: -0.0026021597
-          y: 0.5374137
-          z: 0.008356839
-          w: 0.8432733
+          x: -0.0026028238
+          y: 0.53747594
+          z: 0.0083566895
+          w: 0.84323364
     - Position:
         x: 19.940002
         y: 1.0700073
@@ -1722,17 +1631,17 @@ MonoBehaviour:
       TangentIn:
         x: 0
         y: 0
-        z: -0.46504372
+        z: -0.4650201
       TangentOut:
         x: 0
         y: 0
-        z: 0.46504372
+        z: 0.4650201
       Rotation:
         value:
-          x: -0.017958801
-          y: 0.92690575
-          z: 0.018032728
-          w: 0.37443024
+          x: -0.017958116
+          y: 0.92688906
+          z: 0.018033814
+          w: 0.37447152
     - Position:
         x: 20.100006
         y: 1.1399994
@@ -1740,17 +1649,17 @@ MonoBehaviour:
       TangentIn:
         x: 0
         y: 0
-        z: -0.34666768
+        z: -0.34667194
       TangentOut:
         x: 0
         y: 0
-        z: 0.34666768
+        z: 0.34667194
       Rotation:
         value:
-          x: -0.011859172
-          y: 0.89202756
-          z: 0.011281956
-          w: 0.4516847
+          x: -0.011859383
+          y: 0.8920355
+          z: 0.0112817455
+          w: 0.4516688
     - Position:
         x: 21.800018
         y: 1.1300049
@@ -1758,17 +1667,17 @@ MonoBehaviour:
       TangentIn:
         x: 0
         y: 0
-        z: -0.58370656
+        z: -0.58370924
       TangentOut:
         x: 0
         y: 0
-        z: 0.58370656
+        z: 0.58370924
       Rotation:
         value:
-          x: 0.010401086
-          y: 0.3912844
-          z: 0.014456214
-          w: 0.9200975
+          x: 0.010401031
+          y: 0.39128226
+          z: 0.014456232
+          w: 0.9200984
     - Position:
         x: 22.824114
         y: 1.1596719
@@ -1783,10 +1692,10 @@ MonoBehaviour:
         z: 0.7639306
       Rotation:
         value:
-          x: -0.011262545
-          y: 0.7193632
-          z: 0.013926685
-          w: 0.6944032
+          x: -0.011262552
+          y: 0.71936363
+          z: 0.013926673
+          w: 0.6944027
     - Position:
         x: 26.180023
         y: 1.2600098
@@ -1794,17 +1703,17 @@ MonoBehaviour:
       TangentIn:
         x: 0
         y: 0
-        z: -0.9974128
+        z: -0.9974132
       TangentOut:
         x: 0
         y: 0
-        z: 0.9974128
+        z: 0.9974132
       Rotation:
         value:
-          x: -0.017865304
-          y: 0.5410892
-          z: -0.0040878872
-          w: 0.8407655
+          x: -0.017865144
+          y: 0.54108876
+          z: -0.004087662
+          w: 0.8407657
     - Position:
         x: 27.334732
         y: 1.2888087
@@ -1819,7 +1728,7 @@ MonoBehaviour:
         z: 0.52925664
       Rotation:
         value:
-          x: 0.00038647326
+          x: 0.0003864733
           y: 0.11127238
           z: 0.0007138989
           w: 0.9937897
@@ -1837,10 +1746,10 @@ MonoBehaviour:
         z: 0.58305943
       Rotation:
         value:
-          x: -0.005141196
+          x: -0.0051411963
           y: 0.6248681
-          z: 0.008506931
-          w: 0.780667
+          z: 0.008506932
+          w: 0.7806671
     - Position:
         x: 29.790009
         y: 1.3300018
@@ -1855,7 +1764,7 @@ MonoBehaviour:
         z: 0.4103773
       Rotation:
         value:
-          x: 0.0033734646
+          x: 0.003373465
           y: 0.07698008
           z: 0.012023477
           w: 0.99695444
@@ -1873,9 +1782,9 @@ MonoBehaviour:
         z: 0.33700174
       Rotation:
         value:
-          x: -0.00928716
-          y: 0.45855352
-          z: 0.020791247
+          x: -0.009287159
+          y: 0.45855358
+          z: 0.020791246
           w: 0.88837504
     - Position:
         x: 31.519989
@@ -1946,9 +1855,9 @@ MonoBehaviour:
       Rotation:
         value:
           x: -0.01594541
-          y: 0.647134
-          z: 0.007876285
-          w: 0.7621687
+          y: 0.64713407
+          z: 0.007876287
+          w: 0.7621688
     - Position:
         x: 36.440033
         y: 1.6600037
@@ -1963,10 +1872,10 @@ MonoBehaviour:
         z: 0.33269942
       Rotation:
         value:
-          x: -0.022496197
-          y: 0.47425443
-          z: 0.015612629
-          w: 0.8799619
+          x: -0.0224962
+          y: 0.47425446
+          z: 0.015612631
+          w: 0.87996185
     - Position:
         x: 36.78
         y: 1.7000122
@@ -1983,7 +1892,7 @@ MonoBehaviour:
         value:
           x: -0.023381744
           y: 0.7082862
-          z: 0.0075613223
+          z: 0.0075613214
           w: 0.7054975
     - Position:
         x: 38.30002
@@ -1999,9 +1908,9 @@ MonoBehaviour:
         z: 0.4004938
       Rotation:
         value:
-          x: -0.018493488
-          y: 0.45712438
-          z: 0.010197693
+          x: -0.01849348
+          y: 0.4571244
+          z: 0.01019771
           w: 0.88915205
     - Position:
         x: 39.149994
@@ -2020,7 +1929,7 @@ MonoBehaviour:
           x: -0.013064636
           y: 0.6391928
           z: 0.0032712219
-          w: 0.7689286
+          w: 0.7689285
     - Position:
         x: 42.19998
         y: 1.8600006
@@ -2071,10 +1980,10 @@ MonoBehaviour:
         z: 0.73788327
       Rotation:
         value:
-          x: -0.02347105
-          y: 0.41622233
-          z: 0.011194395
-          w: 0.908891
+          x: -0.023471048
+          y: 0.4162223
+          z: 0.011194391
+          w: 0.90889096
     - Position:
         x: 44.810028
         y: 2.1100006
@@ -2161,8 +2070,8 @@ MonoBehaviour:
         z: 0.29484054
       Rotation:
         value:
-          x: 0.0048838253
-          y: -0.0923373
+          x: 0.0048838262
+          y: -0.09233732
           z: 0.031976726
           w: 0.9952023
     - Position:
@@ -2179,9 +2088,9 @@ MonoBehaviour:
         z: 0.31923714
       Rotation:
         value:
-          x: -0.009286667
-          y: 0.5978886
-          z: 0.020618854
+          x: -0.009286659
+          y: 0.5978885
+          z: 0.02061886
           w: 0.8012602
     - Position:
         x: 49.630035
@@ -2197,7 +2106,7 @@ MonoBehaviour:
         z: 0.27104816
       Rotation:
         value:
-          x: 0.0030425023
+          x: 0.0030425028
           y: -0.2869153
           z: 0.027702115
           w: 0.95755047
@@ -2215,9 +2124,9 @@ MonoBehaviour:
         z: 0.35637033
       Rotation:
         value:
-          x: -0.007866929
+          x: -0.007866928
           y: 0.3611112
-          z: 0.022157986
+          z: 0.022157988
           w: 0.93222624
     - Position:
         x: 51.320038
@@ -2252,7 +2161,7 @@ MonoBehaviour:
       Rotation:
         value:
           x: -0.0023439103
-          y: 0.07148135
+          y: 0.07148136
           z: 0.022940794
           w: 0.9971754
     - Position:
@@ -2269,10 +2178,10 @@ MonoBehaviour:
         z: 0.26525876
       Rotation:
         value:
-          x: -0.011536828
-          y: 0.47955263
+          x: -0.011536827
+          y: 0.4795526
           z: 0.019044017
-          w: 0.8772306
+          w: 0.87723064
     - Position:
         x: 53.839996
         y: 2.5606384
@@ -6097,6 +6006,99 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 512731494}
   m_SourcePrefab: {fileID: 100100000, guid: d9280091cbdee454cad739267adbeb29, type: 3}
+--- !u!1 &793354326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 793354329}
+  - component: {fileID: 793354328}
+  - component: {fileID: 793354327}
+  m_Layer: 0
+  m_Name: Terrain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!154 &793354327
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793354326}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_TerrainData: {fileID: 15600000, guid: 9fcf00c67c5ca9e43a7b99bd742617a1, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!218 &793354328
+Terrain:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793354326}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_TerrainData: {fileID: 15600000, guid: 9fcf00c67c5ca9e43a7b99bd742617a1, type: 2}
+  m_TreeDistance: 5000
+  m_TreeBillboardDistance: 50
+  m_TreeCrossFadeLength: 5
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 80
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
+  m_HeightmapMinimumLODSimplification: 0
+  m_HeightmapMaximumLOD: 0
+  m_ShadowCastingMode: 2
+  m_DrawHeightmap: 1
+  m_DrawInstanced: 0
+  m_DrawTreesAndFoliage: 1
+  m_StaticShadowCaster: 0
+  m_IgnoreQualitySettings: 0
+  m_ReflectionProbeUsage: 1
+  m_MaterialTemplate: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
+  m_BakeLightProbesForTrees: 1
+  m_PreserveTreePrototypeLayers: 0
+  m_DeringLightProbesForTrees: 1
+  m_ReceiveGI: 1
+  m_ScaleInLightmap: 0.0256
+  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_GroupingID: 0
+  m_RenderingLayerMask: 1
+  m_AllowAutoConnect: 1
+  m_EnableHeightmapRayTracing: 1
+  m_EnableTreesAndDetailsRayTracing: 0
+  m_TreeMotionVectorModeOverride: 3
+--- !u!4 &793354329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793354326}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &806457915
 GameObject:
   m_ObjectHideFlags: 0
@@ -6501,7 +6503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 482.56055
+      value: 482.56036
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6513,19 +6515,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.77035856
+      value: 0.77141625
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.02222767
+      value: 0.022222042
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.63695824
+      value: 0.635679
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.018378582
+      value: -0.018311886
       objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7052,15 +7054,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5810017978283021297, guid: 75baae4b94c3fcb43a6a2ae0ed684998, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 616.54
+      value: 616.26
       objectReference: {fileID: 0}
     - target: {fileID: 5810017978283021297, guid: 75baae4b94c3fcb43a6a2ae0ed684998, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 194.81
+      value: 194.83
       objectReference: {fileID: 0}
     - target: {fileID: 5810017978283021297, guid: 75baae4b94c3fcb43a6a2ae0ed684998, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 540.95
+      value: 540.99
       objectReference: {fileID: 0}
     - target: {fileID: 5810017978283021297, guid: 75baae4b94c3fcb43a6a2ae0ed684998, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7849,7 +7851,7 @@ MonoBehaviour:
   startTriggerDelay: 100
   skyFadeDuration: 2.4
   fogDelay: 2.3
-  fogFadeDuration: 36.8
+  fogFadeDuration: 4
   normalSkyColor: {r: 0.12028304, g: 0.13657136, b: 0.16037738, a: 1}
   normalFogColor: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
   normalFogDensity: 0.03
@@ -8623,7 +8625,6 @@ SceneRoots:
   - {fileID: 248136199}
   - {fileID: 2124070474}
   - {fileID: 1999420301}
-  - {fileID: 10247882}
   - {fileID: 208322359}
   - {fileID: 1237847193}
   - {fileID: 949496601}
@@ -8633,3 +8634,4 @@ SceneRoots:
   - {fileID: 1084624197}
   - {fileID: 1179972493}
   - {fileID: 1459583466}
+  - {fileID: 793354329}
