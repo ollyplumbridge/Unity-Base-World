@@ -19136,7 +19136,7 @@ Terrain:
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
+  m_DetailObjectDistance: 1000
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
@@ -36865,10 +36865,10 @@ MonoBehaviour:
         z: 0.5895349
       Rotation:
         value:
-          x: -0.12736887
-          y: 0.9464001
-          z: -0.10972156
-          w: 0.2757991
+          x: -0.12736888
+          y: 0.94640017
+          z: -0.10972153
+          w: 0.27579904
     - Position:
         x: 171.61935
         y: 13.747208
@@ -38089,10 +38089,10 @@ MonoBehaviour:
         z: 0.7048142
       Rotation:
         value:
-          x: -0.039752353
-          y: 0.894461
-          z: 0.17129683
-          w: -0.41111627
+          x: -0.039752357
+          y: 0.8944611
+          z: 0.1712968
+          w: -0.41111624
     - Position:
         x: 60.37021
         y: 46.786316
